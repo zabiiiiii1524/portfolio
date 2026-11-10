@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aniva | Web Design / Responsive Design</title>
+
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Aniva専用CSS -->
+    <link rel="stylesheet" href="aniva.css">
+</head>
+
+<body class="aniva-page">
+
+<header class="aniva-header">
+    <a href="index.html" class="aniva-logo">
+        伊藤良紘
+    </a>
+
+    <nav>
+        <a href="index.html#works">Works</a>
+        <a href="index.html#skill">Skill</a>
+        <a href="index.html#profile">Profile</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- =========================
+         Hero
+    ========================= -->
+
+    <section class="aniva-hero">
+
+        <div class="hero-text">
+
+            <p class="hero-category">
+                Web Design / Responsive Design
+            </p>
+
+            <h1>Aniva</h1>
+
+            <p class="hero-description">
+                特別な日のレストラン選びを、<br>
+                もっと身近に。
+            </p>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <!-- ここを実際のメインビジュアル画像に変更 -->
+            <img
+                src="images/aniva-main.png"
+                alt="Aniva レストラン予約サービス"
+            >
+
+            <div class="slider-controls">
+                <button type="button" aria-label="前の画像">
+                    ←
+                </button>
+
+                <span class="slider-dots">
+                    <i class="active"></i>
+                    <i></i>
+                    <i></i>
+                </span>
+
+                <button type="button" aria-label="次の画像">
+                    →
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Overview
+    ========================= -->
+
+    <section class="aniva-section overview">
+
+        <div class="section-title">
+            <span></span>
+            <h2>制作概要</h2>
+        </div>
+
+
+        <div class="overview-grid">
+
+            <div class="overview-text">
+
+                <p>
+                    「特別な日のレストラン選び」をテーマにした、
+                    架空のレストラン予約サービスを制作しました。
+                </p>
+
+                <p>
+                    高級感や特別感を感じられながらも、
+                    重くなりすぎない
+                    「上品ポップ」をコンセプトにしています。
+                </p>
+
+            </div>
+
+
+            <dl class="aniva-info">
+
+                <div>
+                    <dt>
+                        <span class="info-icon">▣</span>
+                        制作期間
+                    </dt>
+                    <dd>約1週間</dd>
+                </div>
+
+                <div>
+                    <dt>
+                        <span class="info-icon">●</span>
+                        制作人数
+                    </dt>
+                    <dd>1名</dd>
+                </div>
+
+                <div>
+                    <dt>
+                        <span class="info-icon">♟</span>
+                        担当
+                    </dt>
+                    <dd>
+                        企画 / UI・Webデザイン / コーディング<br>
+                        JavaScript実装 / レスポンシブ対応
+                    </dd>
+                </div>
+
+                <div>
+                    <dt>
+                        <span class="info-icon">▣</span>
+                        使用ツール
+                    </dt>
+                    <dd>
+                        Figma / Photoshop / VS Code
+                    </dd>
+                </div>
+
+            </dl>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Features
+    ========================= -->
+
+    <section class="aniva-section features">
+
+        <div class="section-title">
+            <span></span>
+            <h2>主な実装</h2>
+        </div>
+
+
+        <div class="feature-grid">
+
+            <article class="feature-card">
+                <div class="feature-icon green">
+                    ☰
+                </div>
+
+                <h3>ハンバーガーメニュー</h3>
+
+                <p>
+                    スマートフォンでも快適に
+                    ナビゲーションできるよう実装。
+                </p>
+            </article>
+
+
+            <article class="feature-card">
+                <div class="feature-icon orange">
+                    ▧
+                </div>
+
+                <h3>メインビジュアルのスライド</h3>
+
+                <p>
+                    複数の魅力を伝えられる
+                    スライド表示を実装。
+                </p>
+            </article>
+
+
+            <article class="feature-card">
+                <div class="feature-icon blue">
+                    ⌕
+                </div>
+
+                <h3>検索UI</h3>
+
+                <p>
+                    利用シーン・エリア・条件から
+                    探しやすい検索機能を実装。
+                </p>
+            </article>
+
+
+            <article class="feature-card">
+                <div class="feature-icon purple">
+                    ♢
+                </div>
+
+                <h3>タグによる絞り込み</h3>
+
+                <p>
+                    シーン別のタグで目的に合った
+                    店舗をすぐに見つけられるように。
+                </p>
+            </article>
+
+
+            <article class="feature-card">
+                <div class="feature-icon yellow">
+                    □
+                </div>
+
+                <h3>レスポンシブ対応</h3>
+
+                <p>
+                    スマートフォンからPCまで
+                    快適に閲覧できるよう調整。
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Process
+    ========================= -->
+
+    <section class="aniva-section process">
+
+        <div class="section-title">
+            <span></span>
+            <h2>制作の流れ</h2>
+        </div>
+
+
+        <div class="process-list">
+
+            <article class="process-item">
+
+                <span class="process-number">01</span>
+
+                <div>
+                    <h3>企画・要件整理</h3>
+                    <p>
+                        クライアントの要望や
+                        ターゲットを整理し、
+                        必要な機能を検討。
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="process-item">
+
+                <span class="process-number">02</span>
+
+                <div>
+                    <h3>UI・デザイン設計</h3>
+                    <p>
+                        Figmaでデザインカンプを作成。
+                        配色やレイアウトを設計。
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="process-item">
+
+                <span class="process-number">03</span>
+
+                <div>
+                    <h3>素材制作</h3>
+                    <p>
+                        Photoshopでアイコンなどの
+                        素材を切り抜き・加工。
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="process-item">
+
+                <span class="process-number">04</span>
+
+                <div>
+                    <h3>コーディング</h3>
+                    <p>
+                        VS CodeでHTML・CSSを
+                        実装。
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="process-item">
+
+                <span class="process-number">05</span>
+
+                <div>
+                    <h3>JavaScript実装</h3>
+                    <p>
+                        動きのあるUIや検索・絞り込み
+                        機能を実装。
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="process-item">
+
+                <span class="process-number">06</span>
+
+                <div>
+                    <h3>レスポンシブ対応</h3>
+                    <p>
+                        スマートフォンを基準に制作後、
+                        PC画面でも崩れないよう調整。
+                    </p>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Design
+    ========================= -->
+
+    <section class="aniva-section design-section">
+
+        <div class="section-title">
+            <span></span>
+            <h2>デザイン・UIで意識したこと</h2>
+        </div>
+
+
+        <div class="design-content">
+
+            <div class="design-text">
+
+                <p>
+                    ユーザーが料理だけでなく、
+                    店舗の雰囲気や利用シーンから
+                    「自分に合うお店」を選べることを意識しました。
+                </p>
+
+                <p>
+                    ファーストビューではレストランの雰囲気が伝わる
+                    写真を使用し、その下に「デート」「女子会」
+                    「記念日」などのシーン別導線を配置しています。
+                </p>
+
+                <p>
+                    また、おすすめレストランでは写真・評価・
+                    利用シーンなどをカード形式でまとめ、
+                    店舗を比較しやすいUIを意識しました。
+                </p>
+
+            </div>
+
+
+            <div class="design-decoration">
+
+                <p>
+                    Special Day<br>
+                    Special Restaurant.
+                </p>
+
+                <span class="leaf">
+                    ♧
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Other Works
+    ========================= -->
+
+    <section class="other-works">
+
+        <div class="section-title">
+            <span></span>
+            <h2>OTHER WORKS</h2>
+        </div>
+
+
+        <div class="other-grid">
+
+            <a href="#" class="other-item">
+                <img
+                    src="images/banner-fantasy1.jpg"
+                    alt="FANTASY バナー"
+                >
+                <p>Web Banner</p>
+                <small>Photoshop</small>
+            </a>
+
+
+            <a href="#" class="other-item">
+                <img
+                    src="images/banner-beauty1.jpg"
+                    alt="美容サロンバナー"
+                >
+                <p>Web Banner</p>
+                <small>Photoshop</small>
+            </a>
+
+
+            <a href="#" class="other-item">
+                <img
+                    src="images/banner-realestate.jpg"
+                    alt="不動産バナー"
+                >
+                <p>Web Banner</p>
+                <small>Photoshop</small>
+            </a>
+
+
+            <a href="#" class="other-item">
+                <img
+                    src="images/banner-product.jpg"
+                    alt="商品バナー"
+                >
+                <p>Web Banner</p>
+                <small>Photoshop</small>
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="aniva-footer">
+    <a href="index.html">← Back to Portfolio</a>
+</footer>
+
+</body>
+</html>

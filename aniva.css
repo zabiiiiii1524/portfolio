@@ -1,0 +1,988 @@
+/* ==================================================
+   Aniva Work Detail
+================================================== */
+
+.aniva-page {
+    position: relative;
+    overflow-x: hidden;
+
+    background:
+        #f7f6f0;
+
+    color: #263d36;
+
+    font-family:
+        "Times New Roman",
+        "Hiragino Mincho ProN",
+        "Yu Mincho",
+        "YuMincho",
+        serif;
+}
+
+
+/* ==================================================
+   Background Decorations
+================================================== */
+
+.aniva-page::before {
+    content: "";
+    position: fixed;
+
+    width: 180px;
+    height: 180px;
+
+    top: -80px;
+    left: -70px;
+
+    background: #dce3d6;
+
+    border-radius: 50%;
+
+    z-index: -1;
+}
+
+.aniva-page::after {
+    content: "";
+
+    position: fixed;
+
+    width: 170px;
+    height: 220px;
+
+    top: -60px;
+    right: -70px;
+
+    background: #f1e4d2;
+
+    border-radius: 50%;
+
+    z-index: -1;
+}
+
+
+/* ==================================================
+   Header
+================================================== */
+
+.aniva-header {
+    width: 100%;
+
+    padding: 22px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: transparent;
+}
+
+.aniva-logo {
+    font-family:
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    color: #173d36;
+}
+
+.aniva-header nav {
+    display: flex;
+
+    gap: 30px;
+}
+
+.aniva-header nav a {
+    font-family:
+        "Times New Roman",
+        serif;
+
+    font-size: 12px;
+
+    letter-spacing: 0.08em;
+
+    color: #29483f;
+
+    transition: opacity 0.3s ease;
+}
+
+.aniva-header nav a:hover {
+    opacity: 0.5;
+}
+
+
+/* ==================================================
+   Common
+================================================== */
+
+.aniva-section {
+    width: 84%;
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 70px 0;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 42px;
+}
+
+.section-title span {
+    width: 18px;
+    height: 3px;
+
+    display: block;
+
+    background: #70877a;
+}
+
+.section-title h2 {
+    margin: 0;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+}
+
+
+/* ==================================================
+   Hero
+================================================== */
+
+.aniva-hero {
+    width: 84%;
+    max-width: 1180px;
+
+    margin: 30px auto 0;
+
+    min-height: 360px;
+
+    display: grid;
+
+    grid-template-columns: 34% 66%;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.hero-text {
+    padding-left: 10px;
+}
+
+.hero-category {
+    margin: 0 0 20px;
+
+    color: #8a9c92;
+
+    font-size: 12px;
+
+    letter-spacing: 0.08em;
+}
+
+.hero-text h1 {
+    margin: 0;
+
+    color: #173f38;
+
+    font-family:
+        "Times New Roman",
+        Georgia,
+        serif;
+
+    font-size: clamp(70px, 8vw, 110px);
+
+    font-weight: 400;
+
+    line-height: 0.85;
+
+    letter-spacing: -0.04em;
+}
+
+.hero-description {
+    margin: 25px 0 0;
+
+    font-size: 14px;
+
+    line-height: 2;
+
+    letter-spacing: 0.08em;
+}
+
+
+/* Hero Image */
+
+.hero-visual {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1.9 / 1;
+
+    overflow: hidden;
+
+    border-radius: 13px;
+}
+
+.hero-visual img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 0;
+
+    display: block;
+}
+
+
+/* Slider */
+
+.slider-controls {
+    position: absolute;
+
+    right: 12px;
+    bottom: 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.slider-controls button {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.9);
+
+    color: #38544a;
+
+    cursor: pointer;
+
+    font-size: 13px;
+}
+
+.slider-controls button:first-child {
+    background: rgba(46,74,64,0.85);
+    color: #fff;
+}
+
+.slider-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.slider-dots i {
+    width: 5px;
+    height: 5px;
+
+    display: block;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.7);
+}
+
+.slider-dots i.active {
+    background: #fff;
+}
+
+
+/* ==================================================
+   Overview
+================================================== */
+
+.overview {
+    padding-top: 55px;
+}
+
+.overview-grid {
+    display: grid;
+
+    grid-template-columns: 40% 1fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+.overview-text {
+    padding-left: 30px;
+}
+
+.overview-text p {
+    margin: 0 0 20px;
+
+    font-size: 14px;
+
+    line-height: 2.2;
+
+    letter-spacing: 0.06em;
+}
+
+
+/* Information */
+
+.aniva-info {
+    margin: 0;
+
+    padding: 0 20px;
+
+    border: 1px solid #e2d8c7;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.25);
+}
+
+.aniva-info > div {
+    min-height: 62px;
+
+    display: grid;
+
+    grid-template-columns: 145px 1fr;
+
+    align-items: center;
+
+    border-bottom: 1px solid #e5e0d5;
+}
+
+.aniva-info > div:last-child {
+    border-bottom: none;
+}
+
+.aniva-info dt {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    font-size: 13px;
+
+    color: #587267;
+}
+
+.aniva-info dd {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    letter-spacing: 0.04em;
+}
+
+.info-icon {
+    width: 20px;
+
+    display: inline-flex;
+    justify-content: center;
+
+    color: #748b7f;
+}
+
+
+/* ==================================================
+   Features
+================================================== */
+
+.features {
+    padding-top: 45px;
+}
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 12px;
+}
+
+.feature-card {
+    min-height: 185px;
+
+    padding: 17px 18px;
+
+    border: 1px solid #dce2dc;
+
+    border-radius: 11px;
+
+    background: rgba(255,255,255,0.65);
+}
+
+.feature-icon {
+    width: 45px;
+    height: 45px;
+
+    margin: 0 auto 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+}
+
+.feature-icon.green {
+    background: #e5eee6;
+    color: #668375;
+}
+
+.feature-icon.orange {
+    background: #fae9dc;
+    color: #c98557;
+}
+
+.feature-icon.blue {
+    background: #e5f0f3;
+    color: #4c8293;
+}
+
+.feature-icon.purple {
+    background: #eee8f8;
+    color: #8170bb;
+}
+
+.feature-icon.yellow {
+    background: #faf0d4;
+    color: #b79642;
+}
+
+.feature-card h3 {
+    margin: 0 0 10px;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.04em;
+}
+
+.feature-card p {
+    margin: 0;
+
+    font-family:
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.9;
+
+    color: #64746c;
+}
+
+
+/* ==================================================
+   Process
+================================================== */
+
+.process {
+    padding-top: 50px;
+}
+
+.process-list {
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 22px;
+}
+
+.process-item {
+    position: relative;
+
+    padding-right: 10px;
+}
+
+.process-item:not(:last-child)::after {
+    content: "→";
+
+    position: absolute;
+
+    top: 4px;
+    right: -15px;
+
+    color: #a9b8b0;
+
+    font-size: 23px;
+}
+
+.process-number {
+    width: 32px;
+    height: 32px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #6c8275;
+
+    color: white;
+
+    font-family:
+        "Times New Roman",
+        serif;
+
+    font-size: 12px;
+}
+
+.process-item h3 {
+    margin: 0 0 10px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.process-item p {
+    margin: 0;
+
+    font-family:
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+
+    color: #68766f;
+}
+
+
+/* ==================================================
+   Design
+================================================== */
+
+.design-section {
+    padding-bottom: 90px;
+}
+
+.design-content {
+    display: grid;
+
+    grid-template-columns: 55% 45%;
+
+    align-items: center;
+}
+
+.design-text {
+    padding-left: 30px;
+}
+
+.design-text p {
+    margin: 0 0 17px;
+
+    font-family:
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+
+    font-size: 12px;
+
+    line-height: 2.2;
+
+    color: #445950;
+}
+
+.design-decoration {
+    position: relative;
+
+    width: 280px;
+    height: 150px;
+
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f2e5d5;
+
+    border-radius: 45% 55% 48% 52%;
+
+    transform: rotate(-4deg);
+}
+
+.design-decoration p {
+    margin: 0;
+
+    color: #81928a;
+
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: 21px;
+
+    line-height: 1.2;
+
+    text-align: center;
+
+    transform: rotate(4deg);
+}
+
+.leaf {
+    position: absolute;
+
+    right: -35px;
+    bottom: 10px;
+
+    color: #718c7d;
+
+    font-size: 55px;
+
+    transform: rotate(-25deg);
+}
+
+
+/* ==================================================
+   Other Works
+================================================== */
+
+.other-works {
+    padding: 35px 7% 70px;
+
+    background: rgba(255,255,255,0.65);
+
+    border-top: 1px solid rgba(180,180,170,0.25);
+}
+
+.other-works .section-title {
+    margin-bottom: 20px;
+}
+
+.other-works .section-title h2 {
+    font-family:
+        "Times New Roman",
+        serif;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.18em;
+}
+
+.other-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+}
+
+.other-item {
+    display: block;
+}
+
+.other-item img {
+    width: 100%;
+
+    aspect-ratio: 1.7 / 1;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.other-item:hover img {
+    transform: translateY(-3px);
+
+    opacity: 0.85;
+}
+
+.other-item p {
+    margin: 9px 0 1px;
+
+    font-size: 10px;
+
+    color: #718078;
+}
+
+.other-item small {
+    font-size: 9px;
+
+    color: #718078;
+}
+
+
+/* ==================================================
+   Footer
+================================================== */
+
+.aniva-footer {
+    padding: 40px;
+
+    text-align: center;
+
+    background: #f7f6f0;
+}
+
+.aniva-footer a {
+    font-family:
+        "Times New Roman",
+        serif;
+
+    font-size: 12px;
+
+    letter-spacing: 0.1em;
+
+    color: #526b60;
+}
+
+
+/* ==================================================
+   Responsive
+================================================== */
+
+@media (max-width: 900px) {
+
+    .aniva-hero {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .hero-text {
+        padding-left: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 90px;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .overview-text {
+        padding-left: 0;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .process-list {
+        grid-template-columns: repeat(3, 1fr);
+
+        row-gap: 35px;
+    }
+
+    .process-item:nth-child(3)::after {
+        display: none;
+    }
+
+    .design-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .design-decoration {
+        margin: 0 auto;
+    }
+
+    .other-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ==================================================
+   Mobile
+================================================== */
+
+@media (max-width: 600px) {
+
+    .aniva-header {
+        padding: 20px 6%;
+    }
+
+    .aniva-header nav {
+        gap: 13px;
+    }
+
+    .aniva-header nav a {
+        font-size: 9px;
+    }
+
+    .aniva-hero {
+        width: 88%;
+
+        margin-top: 35px;
+    }
+
+    .hero-text h1 {
+        font-size: 72px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+    }
+
+    .hero-visual {
+        aspect-ratio: 1.35 / 1;
+
+        border-radius: 10px;
+    }
+
+    .aniva-section {
+        width: 88%;
+
+        padding: 55px 0;
+    }
+
+    .section-title {
+        margin-bottom: 30px;
+
+        gap: 12px;
+    }
+
+    .section-title h2 {
+        font-size: 15px;
+    }
+
+
+    /* Information */
+
+    .aniva-info {
+        padding: 0 15px;
+    }
+
+    .aniva-info > div {
+        grid-template-columns: 110px 1fr;
+
+        min-height: 58px;
+    }
+
+    .aniva-info dt {
+        font-size: 11px;
+
+        gap: 8px;
+    }
+
+    .aniva-info dd {
+        font-size: 11px;
+    }
+
+
+    /* Features */
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .feature-card {
+        min-height: 175px;
+
+        padding: 15px 12px;
+    }
+
+    .feature-card h3 {
+        font-size: 11px;
+    }
+
+
+    /* Process */
+
+    .process-list {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .process-item {
+        display: grid;
+
+        grid-template-columns: 40px 1fr;
+
+        gap: 15px;
+    }
+
+    .process-number {
+        margin: 0;
+    }
+
+    .process-item:not(:last-child)::after {
+        display: none;
+    }
+
+
+    /* Design */
+
+    .design-text {
+        padding-left: 0;
+    }
+
+    .design-decoration {
+        width: 240px;
+        height: 130px;
+    }
+
+    .design-decoration p {
+        font-size: 18px;
+    }
+
+
+    /* Other Works */
+
+    .other-works {
+        padding: 35px 6% 55px;
+    }
+
+    .other-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 18px 12px;
+    }
+
+    .other-item p {
+        font-size: 9px;
+    }
+
+}
